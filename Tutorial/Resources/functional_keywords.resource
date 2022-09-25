@@ -75,10 +75,9 @@ Open CarConfig As User
     Click Login Btn
 
 Open CarConfig
-    New Browser    chromium    headless=False
+    New Browser    chromium    headless=False    args=["--start-maximized"]
     New Context
     ...    colorScheme=dark
-    ...    viewport={'width': 1000, "height": 500}
+    ...    viewport=${None}
     ...    tracing=${OUTPUTDIR}/trace.zip
-    ...    recordVideo={"dir": "videos", "size": {"width": 1000, "height": 500}}
     New Page    ${BASE-URL}

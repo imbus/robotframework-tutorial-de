@@ -2,15 +2,17 @@
 Library     Browser    timeout=10s    enable_presenter_mode=False    show_keyword_call_banner=True
 
 
+*** Variables ***
+${BASE-URL}=                http://car.keyword-driven.de
+${btn_NewCar}=              a.HomeListButtonNewCar
+${select_CarBaseModel}=     "Basismodell" >> ../.. >> select
+${btn_LeftArrow}=           i.fa-chevron-left
+${btn_RightArrow}=          i.fa-chevron-right
+${txt_CarName}=             "Speichern:" >> ../.. >> input
+${btn_Save}=                a >> "Speichern"
+
+
 *** Keywords ***
-Log Starttime
-    Set Suite Variable    \${starttime}    ${{time.time()}}
-
-Log Endtime
-    ${duration}=    Evaluate
-    ...    '\\033[4m\\033[94m' + "Testtime: " + str(round(time.time() - $starttime, 3)) + "\\033[0m"
-    #Log To Console    ${duration}
-
 Go To Next Page
     Click    ${btn_RightArrow}
 
@@ -66,9 +68,6 @@ Set Username
 Set Password
     [Arguments]    ${password}
     Fill Secret    id=input_password    $password
-    Fill Secret    id=input_password    ${password}
-    Fill Secret    id=input_password    @RBTFRMWRK@
 
 Click Login Btn
     Click    id=button_login
-

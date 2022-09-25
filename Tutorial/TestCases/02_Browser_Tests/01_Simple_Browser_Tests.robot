@@ -1,8 +1,8 @@
 *** Settings ***
-Library    Browser
+Library     Browser
 
 
-*** Testfälle ***
+*** Test Cases ***
 Open CarConfig And Login
     New Browser    chromium    False
     New Context

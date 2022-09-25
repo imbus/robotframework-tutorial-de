@@ -1,6 +1,6 @@
 {
     "gitpod.experimental.portsView.enabled": false,
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Visual Studio Dark",
     "files.autoSave": "onFocusChange",
     "explorer.compactFolders": false,
     "git.autorefresh": true,
@@ -12,5 +12,8 @@
         "./resources",
         "./Tutorial/Resources"
     ],
-    "robotcode.run.openOutputAfterRun": "log"
+    "robotcode.robot.args": [
+        "--loglevel",
+        "TRACE:INFO"
+    ],
 }
