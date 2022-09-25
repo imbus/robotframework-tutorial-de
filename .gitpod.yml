@@ -5,6 +5,8 @@ tasks:
       pip install -r requirements.txt
       rfbrowser init
       npx --yes playwright install-deps
+    command: |
+      node dynamic-test-app/dist/server.js
 image: gitpod/workspace-full-vnc
 ports:
   - port: 6080
