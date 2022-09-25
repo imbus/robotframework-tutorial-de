@@ -5,6 +5,7 @@ tasks:
       pip install -r requirements.txt
     command: |
       rfbrowser init
+      npx playwright install-deps
 image: gitpod/workspace-full-vnc
 ports:
   - port: 6080
