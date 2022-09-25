@@ -16,3 +16,6 @@ vscode:
     - d-biehl.robotcode
     - bierner.docs-view
     - ms-vscode.live-server
+    - ms-toolsai.jupyter
+    - ms-toolsai.jupyter-keymap
+    - ms-toolsai.jupyter-renderers

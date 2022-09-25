@@ -5,6 +5,18 @@
 		}
 	],
 	"settings": {
-		"robotcode.robot.languages": ["de"]
+		"gitpod.experimental.portsView.enabled": false,
+		"workbench.colorTheme": "Default Dark+",
+		"files.autoSave": "onFocusChange",
+		"explorer.compactFolders": false,
+		"git.autorefresh": true,
+
+		"robotcode.robot.languages": ["de"],
+		"robotcode.robot.pythonPath": [
+			"./lib",
+			"./resources",
+			"./Tutorial/Resources"
+		],
+		"robotcode.run.openOutputAfterRun": "log"
 	}
 }
