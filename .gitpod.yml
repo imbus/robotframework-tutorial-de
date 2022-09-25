@@ -3,9 +3,9 @@ tasks:
   - init: |
       python -m pip install --upgrade pip
       pip install -r requirements.txt
+      npx --yes playwright install-deps
     command: |
       rfbrowser init
-      npx playwright install-deps
 image: gitpod/workspace-full-vnc
 ports:
   - port: 6080
