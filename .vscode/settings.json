@@ -4,6 +4,7 @@
     "files.autoSave": "onFocusChange",
     "explorer.compactFolders": false,
     "git.autorefresh": true,
+    "git.autofetchPeriod": 10,
 
     "robotcode.robot.languages": ["de"],
     "robotcode.robot.pythonPath": [
