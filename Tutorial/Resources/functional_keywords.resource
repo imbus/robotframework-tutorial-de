@@ -1,9 +1,10 @@
 *** Settings ***
-Resource          technical_keywords.resource
+Resource    technical_keywords.resource
 
 
 *** Variables ***
-${car_name}    [href="/config/summary/wrong"]
+${car_name}     [href="/config/summary/wrong"]
+
 
 *** Keywords ***
 Verify Base Mode Page
@@ -53,7 +54,6 @@ Set wrong Car Name
     Click    ${car_name}
     Type Text    ${txt_CarName}    ${Name}
 
-
 Verify Total Price
     [Arguments]    ${expected_price}    ${unit}
     Click    [href="/config/summary"]
@@ -65,7 +65,7 @@ Verify Total Price
 
 Verify Price
     [Arguments]    ${expected_price}
-    ${price_text}=    Get Text    css=span.summaryTotalPriceStyle
+    ${price_text}    Get Text    css=span.summaryTotalPriceStyle
     Should Contain    ${price_text}    ${expected_price}
 
 Open CarConfig As User
@@ -76,5 +76,9 @@ Open CarConfig As User
 
 Open CarConfig
     New Browser    chromium    headless=False
-    New Context    colorScheme=dark   viewport={'width': 1000, "height": 500}    tracing=${OUTPUTDIR}/trace.zip    recordVideo={"dir": "videos", "size": {"width": 1000, "height": 500}}
+    New Context
+    ...    colorScheme=dark
+    ...    viewport={'width': 1000, "height": 500}
+    ...    tracing=${OUTPUTDIR}/trace.zip
+    ...    recordVideo={"dir": "videos", "size": {"width": 1000, "height": 500}}
     New Page    ${BASE-URL}
