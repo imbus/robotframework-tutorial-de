@@ -7,7 +7,7 @@
     "git.autorefresh": true,
     "git.autofetchPeriod": 10,
 
-    "robotcode.robot.languages": ["de"],
+    // "robotcode.robot.languages": ["de"],
     "robotcode.robot.pythonPath": [
         "./lib",
         "./resources",
@@ -17,7 +17,7 @@
         "--loglevel",
         "TRACE:INFO"
     ],
-    "workbench.iconTheme": "material-icon-theme",
+    "robotcode.debug.outputMessages": false,
     "redhat.telemetry.enabled": false,
     "workbench.colorTheme": "Default Light+",
     "gitpod.openInStable.neverPrompt": true,
@@ -34,6 +34,7 @@
         "requirements.txt": true,
         "README.md": true
     },
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
         "[Default Light+]": {
             // "editor.background": "#0d0f14",
@@ -55,9 +56,7 @@
             "activityBar.background": "#0d0f14",
             "activityBar.inactiveForeground": "#ffffff",
             "activityBar.border": "#3f7bcf",
-            "debugConsole.infoForeground": "#ffffff",
-            "debugConsole.warningForeground": "#ffff00",
-            "debugConsole.errorForeground": "#ff3333",
+            "debugConsole.warningForeground": "#008Aff",
             "debugConsole.sourceForeground": "#3f7bcf",
             "terminal.foreground": "#ffffff",
             "terminal.ansiGreen": "#00ff00",
@@ -126,5 +125,4 @@
             }
         ]
     },
-    "robotcode.debug.outputMessages": false,
 }

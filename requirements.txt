@@ -2,3 +2,6 @@ robotframework==5.1b2
 robotframework-browser==14.1.0
 robotframework-debugger
 robotframework-tidy
+robotframework-faker
+robotframework-debuglibrary
+robotframework-pabot

@@ -7,7 +7,7 @@ ${car_name}     [href="/config/summary/wrong"]
 
 
 *** Keywords ***
-Verify Base Mode Page
+Verify Base Model Page
     Get Url    ==    ${BASE-URL}/config/basemodel
 
 Select ${basemodel} as model
@@ -22,7 +22,7 @@ Select Base Model
 Select Special Model
     [Arguments]    ${special}
     Click    css=[href="/config/edition"] >> nth=0
-    Click    //div[@id='editionNames']//div[contains(text(),'${special}')]
+    Click    div#editionNames div >> text=${special}
 
 Select Accessories
     [Arguments]    @{accessory_list}
@@ -36,13 +36,13 @@ Select Accessory
     [Arguments]    ${accessory}
     Go To Accessories
     #Click Link    css=[href="/config/extras"]
-    Check Checkbox    //span[contains(text(),'${accessory}')]/../input
+    Check Checkbox    span >> text=${accessory} >> ../input
 
 Unselect Accessory
     [Arguments]    ${accessory}
     Go To Accessories
     #Click Link    css=[href="/config/extras"]
-    Uncheck Checkbox    //span[contains(text(),'${accessory}')]/../input
+    Uncheck Checkbox    span >> text=${accessory} >> ../input
 
 Set Car Name
     [Arguments]    ${Name}
@@ -69,15 +69,7 @@ Verify Price
     Should Contain    ${price_text}    ${expected_price}
 
 Open CarConfig As User
-    Open CarConfig
+    Open Web Page
     Set Username    admin
     Set Password    @RBTFRMWRK@
     Click Login Btn
-
-Open CarConfig
-    New Browser    chromium    headless=False    args=["--start-maximized"]
-    New Context
-    ...    colorScheme=dark
-    ...    viewport=${None}
-    ...    tracing=${OUTPUTDIR}/trace.zip
-    New Page    ${BASE-URL}

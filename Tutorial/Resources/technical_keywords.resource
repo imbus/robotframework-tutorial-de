@@ -13,6 +13,16 @@ ${btn_Save}=                a >> "Speichern"
 
 
 *** Keywords ***
+Open Web Page
+    [Arguments]    ${url}=${BASE-URL}   ${browser}=chromium   ${headless}=False
+    ${args}=    IF    $browser=="chromium"    Set Variable   ["--start-maximized"]
+    New Browser    ${browser}    headless=${headless}    args=${args}
+    New Context
+    ...    colorScheme=dark
+    ...    viewport=${None}
+    ...    tracing=${OUTPUTDIR}/trace.zip
+    New Page    ${url}
+
 Go To Next Page
     Click    ${btn_RightArrow}
 

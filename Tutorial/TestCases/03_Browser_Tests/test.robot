@@ -1,5 +1,5 @@
 *** Settings ***
-Bibliothek      Browser
+Library      Browser
 
 
 *** Test Cases ***

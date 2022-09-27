@@ -14,8 +14,7 @@ Configure Car with Pass
     Show Keyword Banner    True
     Select Special Model    Jazz
     Verify Total Price    16,619.00    €
-    Show Keyword Banner    False
-    Set Car Name    My New Car
+    Set Car Name    ${{}}
     Save New_Car
 
 Configure Car with wrong Acc
