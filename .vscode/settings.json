@@ -1,6 +1,7 @@
 {
+    "python.defaultInterpreterPath": "/home/gitpod/.pyenv/shims/python",
+    "python.terminal.activateEnvironment": false,
     "gitpod.experimental.portsView.enabled": false,
-    "workbench.colorTheme": "Visual Studio Dark",
     "files.autoSave": "onFocusChange",
     "explorer.compactFolders": false,
     "git.autorefresh": true,
@@ -16,4 +17,107 @@
         "--loglevel",
         "TRACE:INFO"
     ],
+    "workbench.iconTheme": "material-icon-theme",
+    "redhat.telemetry.enabled": false,
+    "workbench.colorTheme": "Default Dark+",
+    "gitpod.openInStable.neverPrompt": true,
+    "git.autofetch": true,
+    "github.gitProtocol": "ssh",
+    "files.trimTrailingWhitespace": true,
+    "githubPullRequests.createOnPublishBranch": "never",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "files.exclude": {
+        "**/.*": true,
+        "**/.vscode": true,
+        "LICENSE": true,
+        "requirements.txt": true,
+        "README.md": true
+    },
+    "workbench.colorCustomizations": {
+        "[Default Dark+]": {
+            "editor.background": "#0d0f14",
+            "terminal.background": "#000000",
+
+            "sideBar.background": "#0d0f14",
+            // "sideBar.border": "#3f7bcf",
+            "list.hoverBackground": "#3f7bcf",
+            "list.hoverForeground": "#ffffff",
+
+            "activityBar.activeBackground": "#3f7bcf",
+            "activityBar.background": "#0d0f14",
+            "activityBar.inactiveForeground": "#aaaaaa",
+            // "activityBar.border": "#3f7bcf"
+            "debugToolBar.background": "#0d0f14",
+            "panel.background": "#0d0f14",
+            "debugConsole.infoForeground": "#ffffff",
+            "debugConsole.warningForeground": "#ffffff",
+            "debugConsole.errorForeground": "#ff3333",
+            "terminal.foreground": "#ffffff",
+            "terminal.ansiGreen": "#00ff00",
+            "terminal.ansiRed": "#ff6600"
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "variable.function.keyword-call.inner.robotframework",
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": "variable.function.keyword-call.robotframework",
+                "settings": {
+                    //"fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "entity.name.function.testcase.name.robotframework",
+                "settings": {
+                    "fontStyle": "underline",
+                    "foreground": "#3f7bcf"
+
+                }
+            },
+            {
+                "scope": "entity.name.function.keyword.name.robotframework",
+                "settings": {
+                    "fontStyle": "underline italic",
+                    "foreground": "#3f7bcf"
+
+                }
+            },
+            {
+                "scope": "variable.other.readwrite.robotframework",
+                "settings": {
+                    //"fontStyle": "italic",
+                }
+            },
+            {
+                "scope": "keyword.control.import",
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": "keyword.other.header",
+                "settings": {
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "keyword.other.header.comment.robotframework",
+                "settings": {
+                    "fontStyle": "bold italic underline"
+                }
+            },
+            {
+                "scope": "constant.character.escape",
+                "settings": {
+                    "foreground": "#6666ff",
+                }
+            }
+        ]
+    },
 }
