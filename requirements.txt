@@ -3,5 +3,5 @@ robotframework-browser==14.1.0
 robotframework-debugger
 robotframework-tidy
 robotframework-faker
-robotframework-debuglibrary
+robotframework-debug
 robotframework-pabot
