@@ -19,7 +19,7 @@
     ],
     "workbench.iconTheme": "material-icon-theme",
     "redhat.telemetry.enabled": false,
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Default Light+",
     "gitpod.openInStable.neverPrompt": true,
     "git.autofetch": true,
     "github.gitProtocol": "ssh",
@@ -35,24 +35,30 @@
         "README.md": true
     },
     "workbench.colorCustomizations": {
-        "[Default Dark+]": {
-            "editor.background": "#0d0f14",
+        "[Default Light+]": {
+            // "editor.background": "#0d0f14",
             "terminal.background": "#000000",
 
-            "sideBar.background": "#0d0f14",
+            // "sideBar.background": "#0d0f14",
             // "sideBar.border": "#3f7bcf",
             "list.hoverBackground": "#3f7bcf",
             "list.hoverForeground": "#ffffff",
-
+            "list.activeSelectionForeground": "#ffffff",
+            "list.activeSelectionIconForeground": "#ffffff",
+            "menu.selectionForeground": "#ffffff",
+            "tab.inactiveBackground": "#0d0f14",
+            "tab.inactiveForeground": "#ffffff",
+            "tab.border": "#3f7bcf",
+            "gitDecoration.modifiedResourceForeground": "#008Aff",
+            "gitDecoration.untrackedResourceForeground": "#aaaaaa",
             "activityBar.activeBackground": "#3f7bcf",
             "activityBar.background": "#0d0f14",
-            "activityBar.inactiveForeground": "#aaaaaa",
-            // "activityBar.border": "#3f7bcf"
-            "debugToolBar.background": "#0d0f14",
-            "panel.background": "#0d0f14",
+            "activityBar.inactiveForeground": "#ffffff",
+            "activityBar.border": "#3f7bcf",
             "debugConsole.infoForeground": "#ffffff",
-            "debugConsole.warningForeground": "#ffffff",
+            "debugConsole.warningForeground": "#ffff00",
             "debugConsole.errorForeground": "#ff3333",
+            "debugConsole.sourceForeground": "#3f7bcf",
             "terminal.foreground": "#ffffff",
             "terminal.ansiGreen": "#00ff00",
             "terminal.ansiRed": "#ff6600"
@@ -120,4 +126,5 @@
             }
         ]
     },
+    "robotcode.debug.outputMessages": false,
 }
