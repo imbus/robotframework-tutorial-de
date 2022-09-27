@@ -14,8 +14,9 @@
         "./Tutorial/Resources"
     ],
     "robotcode.robot.args": [
-        "--loglevel",
-        "TRACE:INFO"
+        // "--loglevel",
+        // // "TRACE:INFO"
+        // "INFO"
     ],
     "robotcode.debug.outputMessages": false,
     "redhat.telemetry.enabled": false,

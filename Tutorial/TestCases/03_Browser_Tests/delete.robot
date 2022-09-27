@@ -3,7 +3,10 @@ Resource    functional_keywords.resource
 
 
 *** Test Cases ***
-Test
+
+
+*** Keywords ***
+Delete All Cars
     FOR    ${i}    IN RANGE    1    21
         Open Web Page
         Set Username    schulung${{str($i).rjust(2, "0")}}
