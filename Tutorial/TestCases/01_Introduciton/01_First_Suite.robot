@@ -4,4 +4,3 @@ Test Case 1
     Should Be Equal    Hello    Hello
 
 Test Case 2
-   Fail
