@@ -1,11 +1,14 @@
 
 tasks:
-  - init: |
-      sudo cp -f /workspace/robocon-de-tutorial/.vscode/RBCN-DE.png /usr/share/backgrounds/xfce/xfce-stripes.png
+  - name: Set Background
+    before: sudo cp -f /workspace/robocon-de-tutorial/.vscode/RBCN-DE.png /usr/share/backgrounds/xfce/xfce-stripes.png
+  - name: install System
+    init: |
       python -m pip install --upgrade pip
       pip install -r requirements.txt
       rfbrowser init
       npx --yes playwright install-deps
+  - name: Set it again
     command: |
       sudo cp -f /workspace/robocon-de-tutorial/.vscode/RBCN-DE.png /usr/share/backgrounds/xfce/xfce-stripes.png
 image: gitpod/workspace-full-vnc
