@@ -1,5 +1,5 @@
 *** Test Cases ***
-Test Case 1
+Test Case that passes
     [Documentation]    This test will check if "Hello" is "Hello" and pass.
     Log     Hello World
     Should Be Equal    Hello    Hello

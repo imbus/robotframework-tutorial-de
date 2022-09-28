@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    functional_keywords.resource
+Resource    technical_keywords.resource
 
 
 *** Test Cases ***
