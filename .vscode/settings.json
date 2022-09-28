@@ -19,6 +19,7 @@
     ],
     "robotcode.debug.outputMessages": false,
     "robotcode.debug.groupOutput": false,
+    "robotcode.robocop.enabled": false,
     "redhat.telemetry.enabled": false,
     "workbench.colorTheme": "Default Light+",
     "gitpod.openInStable.neverPrompt": true,
@@ -115,7 +116,7 @@
             {
                 "scope": "keyword.other.header.comment.robotframework",
                 "settings": {
-                    "fontStyle": "bold italic underline"
+                    "fontStyle": "bold"
                 }
             },
             {
