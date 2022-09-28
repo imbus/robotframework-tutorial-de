@@ -6,6 +6,8 @@ tasks:
       pip install -r requirements.txt
       rfbrowser init
       npx --yes playwright install-deps
+    command: |
+      sudo cp -f /workspace/robocon-de-tutorial/.vscode/RBCN-DE.png /usr/share/backgrounds/xfce/xfce-stripes.png
 image: gitpod/workspace-full-vnc
 ports:
   - port: 6080
