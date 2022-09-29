@@ -22,7 +22,7 @@ Select ${basemodel} as model
     Wait For Elements State    ${select_CarBaseModel}
     Select Options By    ${select_CarBaseModel}    text    ${basemodel}
 
-Select Base Model
+Select Car Base Model
     [Arguments]    ${basemodel}
     Wait For Elements State    ${select_CarBaseModel}
     Select Options By    ${select_CarBaseModel}    text    ${basemodel}
@@ -32,24 +32,14 @@ Select Special Model
     Click    css=[href="/config/edition"] >> nth=0
     Click    div#editionNames div >> text=${special}
 
-Select Accessories
-    [Arguments]    @{accessory_list}
-    Go To Accessories
-    #Click Link    css=[href="/config/extras"]
-    FOR    ${acc}    IN    @{accessory_list}
-        Select Accessory    ${acc}
-    END
-
 Select Accessory
     [Arguments]    ${accessory}
     Go To Accessories
-    #Click Link    css=[href="/config/extras"]
     Check Checkbox    span >> text=${accessory} >> ../input
 
 Unselect Accessory
     [Arguments]    ${accessory}
     Go To Accessories
-    #Click Link    css=[href="/config/extras"]
     Uncheck Checkbox    span >> text=${accessory} >> ../input
 
 Set Car Name
@@ -59,7 +49,7 @@ Set Car Name
 
 Verify Total Price
     [Arguments]    ${expected_price}    ${unit}
-    Click    [href="/config/summary"]
+    Click    [href="/config/summary"] >> nth=0
     ${exc_price}    Regexp Escape    ${expected_price}
     ${pricestr}    Get Text    css=span.summaryTotalPriceStyle > h6
     Run Keyword And Continue On Failure    Should Match Regexp    ${pricestr}    .*(${exc_price}).*
