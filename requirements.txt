@@ -1,8 +1,11 @@
-robotframework==5.1b2
-robotframework-browser==14.1.0
+robotframework==6.0rc1
+robotframework-browser
 robotframework-debugger
 robotframework-robocop
 robotframework-tidy
 robotframework-faker
 robotframework-debug
 robotframework-pabot
+robotframework-datadriver
+robotframework-stacktrace
+robotframework-crypto

@@ -34,7 +34,8 @@
         "**/.vscode": true,
         "LICENSE": true,
         "requirements.txt": true,
-        "README.md": true
+        "README.md": true,
+        "**/crypto_keys": true
     },
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
@@ -58,8 +59,8 @@
             "activityBar.background": "#0d0f14",
             "activityBar.inactiveForeground": "#ffffff",
             "activityBar.border": "#3f7bcf",
-            // "debugConsole.warningForeground": "#008Aff",
-            // "debugConsole.sourceForeground": "#3f7bcf",
+            "debugConsole.warningForeground": "#0d0f14",
+            "debugConsole.sourceForeground": "#008Aff",
             "terminal.foreground": "#ffffff",
             "terminal.ansiGreen": "#00ff00",
             "terminal.ansiRed": "#ff6600"
