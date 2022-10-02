@@ -12,4 +12,3 @@ Login with correct data
     Click    id=button_login
     Get Title    ==    CarConfigurator
     Get Url    ==    http://car.keyword-driven.de/list
-

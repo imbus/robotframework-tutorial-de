@@ -1,10 +1,9 @@
 *** Test Cases ***
-Test Case that passes
-    [Documentation]    This test will check if "Hello" is "Hello" and pass.
+My Simple Test
     Log     Hello World
+    Log To Console     Hello World Console
     Should Be Equal    Hello    Hello
 
-Test Case that fails
-    [Documentation]    This test will check if "Hello" is equal to "World" and therefore fail.
-    Log    Hello This will Fail...
-    Should Be Equal    Hello    World
+My failing Test
+    Log To Console    This test case fails
+    Should Be Equal    Hello    World!
