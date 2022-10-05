@@ -23,7 +23,7 @@ ports:
 vscode:
   extensions:
     - ms-python.python
-    - d-biehl.robotcode@0.13.18
+    - d-biehl.robotcode@0.13.21
     - bierner.docs-view
     - ms-toolsai.jupyter
     - ms-toolsai.jupyter-keymap
