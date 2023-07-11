@@ -21,7 +21,7 @@
     "robotcode.debug.groupOutput": false,
     "robotcode.robocop.enabled": false,
     "redhat.telemetry.enabled": false,
-    "workbench.colorTheme": "Default Light+",
+    "workbench.colorTheme": "Default Dark+",
     "gitpod.openInStable.neverPrompt": true,
     "git.autofetch": true,
     "github.gitProtocol": "ssh",
