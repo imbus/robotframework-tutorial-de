@@ -4,10 +4,9 @@ tasks:
     before: |
       sudo cp -f /workspace/robocon-de-tutorial/.vscode/RF_BACKGROUND.png /usr/share/backgrounds/xfce/xfce-verticals.png
       npx --yes playwright install-deps
-      gp sync-done deps
   - name: install Browser
     init: |
-      gp sync-await deps
+      pip install -U robotframework
       python -m pip install --upgrade pip
       pip install -r requirements.txt
       pip install --upgrade --pre robotframework
