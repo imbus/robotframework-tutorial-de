@@ -4,13 +4,16 @@ tasks:
     before: |
       sudo cp -f /workspace/robocon-de-tutorial/.vscode/RF_BACKGROUND.png /usr/share/backgrounds/xfce/xfce-verticals.png
       npx --yes playwright install-deps
+      exit
   - name: install Browser
     init: |
-      pip install -U robotframework
+      code -r Participants/
       python -m pip install --upgrade pip
       pip install -r requirements.txt
-      pip install --upgrade --pre robotframework
       rfbrowser init
+      code -r .
+      exit
+
 image: gitpod/workspace-full-vnc
 ports:
   - port: 6080
