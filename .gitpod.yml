@@ -1,16 +1,17 @@
 
 tasks:
   - name: install System
+    before: |
+      sudo cp -f /workspace/robocon-de-tutorial/.vscode/RF_BACKGROUND.png /usr/share/backgrounds/xfce/xfce-verticals.png
+      npx --yes playwright install-deps
+      gp sync-done deps
+  - name: install Browser
     init: |
+      gp sync-await deps
       python -m pip install --upgrade pip
       pip install -r requirements.txt
       pip install --upgrade --pre robotframework
-      npx --yes playwright install-deps
       rfbrowser init
-    command: |
-      sudo cp -f /workspace/robocon-de-tutorial/.vscode/RF_BACKGROUND.png /usr/share/backgrounds/xfce/xfce-verticals.png
-      npx --yes playwright install-deps
-      clear
 image: gitpod/workspace-full-vnc
 ports:
   - port: 6080
