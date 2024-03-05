@@ -1,25 +1,23 @@
 *** Settings ***
-Library    OperatingSystem
-Library    XML
-Library    String
-Library    FakerLibrary
 Library    Browser
 
 *** Test Cases ***
-Denied Login
+Check RF 3.2 not supporting IF statement
     New Browser    browser=chromium    headless=False
-    New Context    viewport=None
-    New Page       https://www.qs-tag.de/en
-    ${title}    Get Title
-    Should Be Equal    ${title}    Software-QS-Tag - Reinventing Quality
-    Click    text=allow all cookies
-    Click    a.button >> text=RoboCon 2022 Germany
-    ${title}    Get Title
-    Should Be Equal    ${title}    Software-QS-Tag - Reinventing Quality
-    Switch Page    NEW
-    ${new_title}    Get Title
-    ${new_url}    Get Url
-    Should Be Equal    ${new_title}    RoboCon
-    Should Be Equal    ${new_url}      https://robocon.io/germany
-    Wait Until Network Is Idle
-    Take Screenshot    EMBED
+    New Context    colorScheme=dark
+    New Page    https://robotframework.org
+    Click    "Getting Started"
+    Click    id=project-drop-down
+    Click    id=project-dropdown-content >> "Advanced Example"
+    Wait For Condition    Text    id=project-drop-down    ==    Advanced Example
+    Click    id=version-drop-down
+    Click    id=version-dropdown-content >> "3.2"
+    Click    id=run-button
+    Wait For Condition    Element States    id=log.html-button    contains    visible
+    Get Text     id=console    contains     'If' is a reserved keyword.
+    Click    id=log.html-button
+    ${test_case}=    Get Element    id=report >>> [title="Robot Files.Test.Access Own Details With User Rights"] >> ../..
+    Scroll To Element    ${test_case}
+    Take Screenshot    selector=${test_case}
+    ${message}    Get Table Cell Element    ${test_case} >> > div > table.metadata    1    "Message:"
+    Get Text    ${message}    ==     'If' is a reserved keyword.

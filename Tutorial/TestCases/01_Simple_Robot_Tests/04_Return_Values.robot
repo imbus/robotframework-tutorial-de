@@ -12,6 +12,6 @@ Test a Text Contains
     Log To Console     one,two,three
     ${list}    Split String    one,two,three    ,
     Log Many    @{list}
-    Log To Console    ${list}[0]
-    Log To Console    ${list}[1]
-    Log To Console    ${list}[2]
+    FOR    ${item}    IN    @{list}
+        Log To Console    ${item}
+    END

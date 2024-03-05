@@ -1,7 +1,7 @@
 *** Comments ***
-Hallo liebe Teilnehmenden,
+Dear Participants,
 
-Das ist eine Detsche Suite.
+This is a Comment.
 
 
 *** Settings ***
@@ -17,14 +17,14 @@ Testfall 1
     [Tags]    marker1    marker2
     [Timeout]    10 s
     [Setup]    Log To Console    Das ist der Anfang
-    Sag mal    Hallo
+    Ich bin ein Keyword    Hallo
     Log    Bitte das hier auch in die Console    console=Ja
     Log To Console    Das ist mitten drin
     [Teardown]    Log To Console    Das ist das Ende
 
 
 *** Keywords ***
-Sag mal
+Ich bin ein Keyword
     [Arguments]    ${Nachricht}
-    Log    ${Nachricht}    html=ja
+    Log    ${Nachricht}
 

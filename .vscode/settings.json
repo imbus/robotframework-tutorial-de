@@ -1,7 +1,7 @@
 {
     "python.defaultInterpreterPath": "/home/gitpod/.pyenv/shims/python",
     "python.terminal.activateEnvironment": false,
-    "gitpod.experimental.portsView.enabled": false,
+    "gitpod.experimental.portsView.enabled": true,
     "files.autoSave": "onFocusChange",
     "explorer.compactFolders": false,
     "git.autorefresh": true,
@@ -30,102 +30,39 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "files.exclude": {
-        "**/.*": true,
-        "**/.vscode": true,
-        "LICENSE": true,
-        "requirements.txt": true,
-        "README.md": true,
-        "**/crypto_keys": true
+        "**/.*": false,
+        "**/.vscode": false,
+        "LICENSE": false,
+        "requirements.txt": false,
+        "README.md": false,
+        "**/crypto_keys": false
     },
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
-        "[Default Light+]": {
-            // "editor.background": "#0d0f14",
-            "terminal.background": "#000000",
-
-            // "sideBar.background": "#0d0f14",
-            // "sideBar.border": "#3f7bcf",
-            "list.hoverBackground": "#3f7bcf",
-            "list.hoverForeground": "#ffffff",
-            "list.activeSelectionForeground": "#ffffff",
-            "list.activeSelectionIconForeground": "#ffffff",
-            "menu.selectionForeground": "#ffffff",
-            "tab.inactiveBackground": "#0d0f14",
-            "tab.inactiveForeground": "#ffffff",
-            "tab.border": "#3f7bcf",
-            "gitDecoration.modifiedResourceForeground": "#008Aff",
-            "gitDecoration.untrackedResourceForeground": "#aaaaaa",
-            "activityBar.activeBackground": "#3f7bcf",
-            "activityBar.background": "#0d0f14",
-            "activityBar.inactiveForeground": "#ffffff",
-            "activityBar.border": "#3f7bcf",
-            "debugConsole.warningForeground": "#0d0f14",
-            "debugConsole.sourceForeground": "#008Aff",
-            "terminal.foreground": "#ffffff",
-            "terminal.ansiGreen": "#00ff00",
-            "terminal.ansiRed": "#ff6600"
-        }
-    },
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": "variable.function.keyword-call.inner.robotframework",
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope": "variable.function.keyword-call.robotframework",
-                "settings": {
-                    //"fontStyle": "bold"
-                }
-            },
-            {
-                "scope": "entity.name.function.testcase.name.robotframework",
-                "settings": {
-                    "fontStyle": "underline",
-                    "foreground": "#3f7bcf"
-
-                }
-            },
-            {
-                "scope": "entity.name.function.keyword.name.robotframework",
-                "settings": {
-                    "fontStyle": "underline italic",
-                    "foreground": "#3f7bcf"
-
-                }
-            },
-            {
-                "scope": "variable.other.readwrite.robotframework",
-                "settings": {
-                    //"fontStyle": "italic",
-                }
-            },
-            {
-                "scope": "keyword.control.import",
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            },
-            {
-                "scope": "keyword.other.header",
-                "settings": {
-                    "fontStyle": "bold"
-                }
-            },
-            {
-                "scope": "keyword.other.header.comment.robotframework",
-                "settings": {
-                    "fontStyle": "bold"
-                }
-            },
-            {
-                "scope": "constant.character.escape",
-                "settings": {
-                    "foreground": "#6666ff",
-                }
-            }
-        ]
+        // "[Default Dark+]": {
+        //     "editor.background": "#0d0f14",
+        //     "terminal.background": "#000000",
+        //     "sideBar.background": "#0d0f14",
+        //     "sideBar.border": "#00936a",
+        //     "list.hoverBackground": "#00936a",
+        //     "list.hoverForeground": "#ffffff",
+        //     "list.activeSelectionForeground": "#ffffff",
+        //     "list.activeSelectionIconForeground": "#ffffff",
+        //     "menu.selectionForeground": "#ffffff",
+        //     "tab.inactiveBackground": "#0d0f14",
+        //     "tab.inactiveForeground": "#ffffff",
+        //     "tab.border": "#00936a",
+        //     "gitDecoration.modifiedResourceForeground": "#008Aff",
+        //     "gitDecoration.untrackedResourceForeground": "#aaaaaa",
+        //     "activityBar.activeBackground": "#00936a",
+        //     "activityBar.background": "#0d0f14",
+        //     "activityBar.inactiveForeground": "#ffffff",
+        //     "activityBar.border": "#00936a",
+        //     "debugConsole.warningForeground": "#0d0f14",
+        //     "debugConsole.sourceForeground": "#008Aff",
+        //     "terminal.foreground": "#ffffff",
+        //     "terminal.ansiGreen": "#00ff00",
+        //     "terminal.ansiRed": "#ff6600"
+        // }
     },
 }
