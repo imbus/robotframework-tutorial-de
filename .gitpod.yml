@@ -9,6 +9,7 @@ tasks:
       rfbrowser init
     command: |
       sudo cp -f /workspace/robocon-de-tutorial/.vscode/RF_BACKGROUND.png /usr/share/backgrounds/xfce/xfce-verticals.png
+      npx --yes playwright install-deps
       clear
 image: gitpod/workspace-full-vnc
 ports:
