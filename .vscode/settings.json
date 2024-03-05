@@ -1,5 +1,5 @@
 {
-    "python.defaultInterpreterPath": "/home/gitpod/.pyenv/shims/python",
+    //"python.defaultInterpreterPath": "/home/gitpod/.pyenv/shims/python",
     "python.terminal.activateEnvironment": false,
     "gitpod.experimental.portsView.enabled": true,
     "files.autoSave": "onFocusChange",
@@ -21,7 +21,7 @@
     "robotcode.debug.groupOutput": false,
     "robotcode.robocop.enabled": false,
     "redhat.telemetry.enabled": false,
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Default Dark Modern",
     "gitpod.openInStable.neverPrompt": true,
     "git.autofetch": true,
     "github.gitProtocol": "ssh",
