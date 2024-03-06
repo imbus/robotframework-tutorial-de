@@ -2,9 +2,6 @@
 Resource    00_technical_keywords.resource
 
 
-*** Test Cases ***
-
-
 *** Keywords ***
 Delete All Cars
     FOR    ${i}    IN RANGE    1    21
@@ -12,12 +9,12 @@ Delete All Cars
         Set Username    schulung${{str($i).rjust(2, "0")}}
         Set Password    @RBTFRMWRK@
         Click Login Btn
-        Wait For Condition    Element States     text=Neues Auto >> nth=0    contains    visible
-        WHILE  True
+        Wait For Condition    Element States    text=Neues Auto >> nth=0    contains    visible
+        WHILE    True
             ${count}=    Get Element Count    .ng-star-inserted .fa
-            IF    not $count   BREAK
+            IF    not $count    BREAK
             Click    .ng-star-inserted .fa >> nth=0
-            Sleep   1s
+            Sleep    1s
         END
         Close Browser    ALL
     END

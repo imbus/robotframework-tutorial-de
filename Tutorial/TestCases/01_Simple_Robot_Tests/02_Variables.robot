@@ -1,7 +1,8 @@
 *** Variables ***
-${FIRST_NAME}    René
-${LAST_NAME}    Rohner
+${FIRST_NAME}       René
+${LAST_NAME}        Rohner
 @{LIST_VARIABLE}
+
 
 *** Test Cases ***
 Say My Name

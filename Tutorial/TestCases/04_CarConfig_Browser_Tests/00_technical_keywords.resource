@@ -4,13 +4,13 @@ Library     FakerLibrary
 
 
 *** Variables ***
-${BASE-URL}=                http://car.keyword-driven.de
-${btn_NewCar}=              a.HomeListButtonNewCar
-${select_CarBaseModel}=     "Basismodell" >> ../.. >> select
-${btn_LeftArrow}=           i.fa-chevron-left
-${btn_RightArrow}=          i.fa-chevron-right
-${txt_CarName}=             "Speichern:" >> ../.. >> input
-${btn_Save}=                a >> "Speichern"
+${BASE-URL}                 http://car.keyword-driven.de
+${btn_NewCar}               a.HomeListButtonNewCar
+${select_CarBaseModel}      "Basismodell" >> ../.. >> select
+${btn_LeftArrow}            i.fa-chevron-left
+${btn_RightArrow}           i.fa-chevron-right
+${txt_CarName}              "Speichern:" >> ../.. >> input
+${btn_Save}                 a >> "Speichern"
 ${car_name}                 [href="/config/summary/wrong"]
 
 
@@ -50,14 +50,14 @@ Set Car Name
 Verify Total Price
     [Arguments]    ${expected_price}    ${unit}
     Click    [href="/config/summary"] >> nth=0
-    ${exc_price}    Regexp Escape    ${expected_price}
-    ${pricestr}    Get Text    css=span.summaryTotalPriceStyle > h6
+    ${exc_price}=    Regexp Escape    ${expected_price}
+    ${pricestr}=    Get Text    css=span.summaryTotalPriceStyle > h6
     Run Keyword And Continue On Failure    Should Match Regexp    ${pricestr}    .*(${exc_price}).*
     Run Keyword And Continue On Failure    Should Match Regexp    ${pricestr}    .*(${unit}$)
 
 Verify Price
     [Arguments]    ${expected_price}
-    ${price_text}    Get Text    css=span.summaryTotalPriceStyle
+    ${price_text}=    Get Text    css=span.summaryTotalPriceStyle
     Should Contain    ${price_text}    ${expected_price}
 
 Open CarConfig As User
@@ -67,8 +67,12 @@ Open CarConfig As User
     Click Login Btn
 
 Open Web Page
-    [Arguments]    ${url}=${BASE-URL}   ${browser}=chromium   ${headless}=False
-    ${args}=    IF    $browser=="chromium"    Set Variable   ["--start-maximized"]
+    [Arguments]    ${url}=${BASE-URL}    ${browser}=chromium    ${headless}=False
+    IF    $browser=="chromium"
+        ${args}=    Set Variable    ["--start-maximized"]
+    ELSE
+        ${args}=    Set Variable    ${None}
+    END
     New Browser    ${browser}    headless=${headless}    args=${args}
     New Context
     ...    colorScheme=dark

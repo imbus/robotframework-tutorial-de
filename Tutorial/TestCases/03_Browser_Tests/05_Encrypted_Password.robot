@@ -4,7 +4,7 @@ Library     CryptoLibrary    variable_decryption=True    key_path=crypto_keys
 
 
 *** Variables ***
-${PASSWORD}    crypt:MhZu50+Q2tS4ykdlMXKwqGwKHxfjKpu/oCjFf/ZTNXGE1cLouYdOh+9w1vF90/ftI9O7XO6GoWgTdhM=
+${PASSWORD}     crypt:MhZu50+Q2tS4ykdlMXKwqGwKHxfjKpu/oCjFf/ZTNXGE1cLouYdOh+9w1vF90/ftI9O7XO6GoWgTdhM=
 
 
 *** Test Cases ***

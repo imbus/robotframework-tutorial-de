@@ -1,6 +1,7 @@
 *** Settings ***
-Library    Browser
-Documentation    A user shall login by giving correct credentials.
+Documentation       A user shall login by giving correct credentials.
+
+Library             Browser
 
 
 *** Test Cases ***
@@ -12,7 +13,7 @@ A User Logs In To CarConfig
     Then the Page should have the Title 'CarConfigurator' and the URL 'car.keyword-driven.de/list'
 
 
-** Keywords ***
+*** Keywords ***
 CarConfigurator has been opened
     New Browser    headless=False
     New Context
@@ -32,4 +33,3 @@ the Login Button is clicked
 the Page should have the Title '${Title}' and the URL '${url}'
     Get Title    ==    ${Title}
     Get Url    $=    ${url}
-

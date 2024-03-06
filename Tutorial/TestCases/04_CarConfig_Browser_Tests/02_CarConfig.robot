@@ -39,6 +39,3 @@ Select Accessories
     FOR    ${acc}    IN    @{accessory_list}
         Select Accessory    ${acc}
     END
-
-
-

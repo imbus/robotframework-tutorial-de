@@ -1,5 +1,5 @@
 from TestObject import TestObject
-from robot.api.logger import info, debug
+from robot.api.logger import info, debug, trace, console
 
 class CustomLibrary:
     '''This is a user written keyword library.
@@ -26,7 +26,7 @@ class CustomLibrary:
         def post_new_user(self, token, name, login) -> str: ...
     '''
 
-    ROBOT_LIBRARY_SCOPE = 'SUITE'
+    ROBOT_LIBRARY_SCOPE = 'GLOBAL'
 
     def __init__(self) -> None:
         self._session = None
@@ -60,13 +60,13 @@ class CustomLibrary:
     def set_password(self, password):
         '''Sets the users login name and stores it for authentication.'''
         self.password = password
-        info('Password set.')
+        info(f'Password set.')
 
     def execute_login(self):
         '''Triggers the authentication process at the backend and stores the session token.'''
         self._session = self.connection.authenticate(self.login, self.password)
         if self.session:
-            info('User session successfully set.')
+            info(f'User session successfully set.')
             debug(f'Session token is: {self.session}')
         self.login = self.password = ''
 

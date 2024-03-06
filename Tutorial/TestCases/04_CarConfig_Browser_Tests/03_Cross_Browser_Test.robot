@@ -1,5 +1,5 @@
 *** Settings ***
-Library      Browser
+Library     Browser
 
 
 *** Test Cases ***
@@ -17,4 +17,3 @@ Starte Firefox
     New Browser    firefox    False
     New Context    viewport=None
     New Page    https://robocon.io
-

@@ -56,4 +56,3 @@ Open CarConfigurator
     New Browser    headless=False
     New Context
     New Page    http://car.keyword-driven.de
-

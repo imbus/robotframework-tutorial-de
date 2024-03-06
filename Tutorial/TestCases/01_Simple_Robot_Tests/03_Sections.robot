@@ -5,7 +5,7 @@ This is a Comment.
 
 
 *** Settings ***
-Library      String
+Library     String
 
 
 *** Variables ***
@@ -27,4 +27,3 @@ Testfall 1
 Ich bin ein Keyword
     [Arguments]    ${Nachricht}
     Log    ${Nachricht}
-

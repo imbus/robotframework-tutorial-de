@@ -1,7 +1,8 @@
 language: de
 *** Einstellungen ***
-Bibliothek    Browser
-Dokumentation    Ein Benutzer soll in der Lage sein sich mit korrekten Benutzerdaten am System anmelden zu können.
+Dokumentation       Ein Benutzer soll in der Lage sein sich mit korrekten Benutzerdaten am System anmelden zu können.
+
+Bibliothek          Browser
 
 
 *** Testfälle ***
@@ -31,4 +32,3 @@ der Login-Button gedrückt wird
 soll die Seite den Titel '${Title}' und die URL '${url}' haben.
     Get Title    ==    ${Title}
     Get Url    $=    ${url}
-

@@ -28,4 +28,3 @@ Testfall 1
 Sag mal
     [Argumente]    ${Nachricht}
     Log    ${Nachricht}    html=ja
-

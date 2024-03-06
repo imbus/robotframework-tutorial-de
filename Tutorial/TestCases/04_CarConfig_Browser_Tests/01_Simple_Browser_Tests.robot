@@ -10,4 +10,3 @@ Open CarConfig And Login
     ${title}    Get Title
     Should Be Equal    ${title}    CarConfigurator
     Sleep    5s
-

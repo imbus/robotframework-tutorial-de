@@ -10,7 +10,8 @@
     "robotcode.robot.pythonPath": [
         "./lib",
         "./resources",
-        "./Tutorial/Resources"
+        "./Tutorial/Resources",
+        ".TestObject"
     ],
     "robotcode.robot.args": [
         "--loglevel",
@@ -30,12 +31,12 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "files.exclude": {
-        "**/.*": false,
-        "**/.vscode": false,
-        "LICENSE": false,
-        "requirements.txt": false,
-        "README.md": false,
-        "**/crypto_keys": false
+        "**/.*": true,
+        "**/.vscode": true,
+        "LICENSE": true,
+        "requirements.txt": true,
+        "README.md": true,
+        "**/crypto_keys": true
     },
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
