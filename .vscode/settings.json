@@ -1,5 +1,5 @@
 {
-    //"python.defaultInterpreterPath": "/home/gitpod/.pyenv/shims/python",
+    "python.defaultInterpreterPath": "${env:PYTHON}",
     "python.terminal.activateEnvironment": false,
     "gitpod.experimental.portsView.enabled": true,
     "files.autoSave": "onFocusChange",

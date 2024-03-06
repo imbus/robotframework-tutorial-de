@@ -2,11 +2,14 @@
 tasks:
   - name: install System
     before: |
+      echo 'export PYTHON=/home/gitpod/.pyenv/shims/python' >> ~/.bashrc
+      export PYTHON=/home/gitpod/.pyenv/shims/python
       sudo cp -f /workspace/robocon-de-tutorial/.vscode/RF_BACKGROUND.png /usr/share/backgrounds/xfce/xfce-verticals.png
       npx --yes playwright install-deps
       exit
   - name: install Browser
     init: |
+      export PYTHON=/home/gitpod/.pyenv/shims/python
       code -r Participants/
       python -m pip install --upgrade pip
       pip install -r requirements.txt
