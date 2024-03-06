@@ -2,7 +2,7 @@ language: de
 *** Kommentare ***
 Hallo liebe Teilnehmenden,
 
-Das ist eine Detsche Suite.
+Das ist eine Deutsche Suite.
 
 
 *** Einstellungen ***
