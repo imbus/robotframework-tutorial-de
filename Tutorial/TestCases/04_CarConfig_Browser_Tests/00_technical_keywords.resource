@@ -5,6 +5,7 @@ Library     FakerLibrary
 
 *** Variables ***
 ${BASE-URL}                 http://car.keyword-driven.de
+${HEADLESS}                 False
 ${btn_NewCar}               a.HomeListButtonNewCar
 ${select_CarBaseModel}      "Basismodell" >> ../.. >> select
 ${btn_LeftArrow}            i.fa-chevron-left
@@ -62,12 +63,12 @@ Verify Price
 
 Open CarConfig As User
     Open Web Page
-    Set Username    admin
-    Set Password    @RBTFRMWRK@
+    Set Username    user03
+    Set Password    password
     Click Login Btn
 
 Open Web Page
-    [Arguments]    ${url}=${BASE-URL}    ${browser}=chromium    ${headless}=False
+    [Arguments]    ${url}=${BASE-URL}    ${browser}=chromium    ${headless}=${HEADLESS}
     IF    $browser=="chromium"
         ${args}=    Set Variable    ["--start-maximized"]
     ELSE
@@ -138,3 +139,5 @@ Set Password
 
 Click Login Btn
     Click    id=button_login
+
+

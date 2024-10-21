@@ -8,15 +8,15 @@ Bibliothek          Browser
 *** Testfälle ***
 Ein Benutzer meldet sich am CarConfig an
     Angenommen der CarConfigurator wurde geöffnet
-    Wenn als Benutzer 'schulung02' eingegeben wird
-    und als Passwort '@RBTFRMWRK@' eingegeben wird
+    Wenn als Benutzer 'user02' eingegeben wird
+    und als Passwort 'password' eingegeben wird
     und der Login-Button gedrückt wird
     Dann soll die Seite den Titel 'CarConfigurator' und die URL 'car.keyword-driven.de/list' haben.
 
 
 *** Schlüsselwörter ***
 der CarConfigurator wurde geöffnet
-    New Browser    headless=False
+    New Browser    headless=${HEADLESS}
     New Context
     New Page    http://car.keyword-driven.de
 
@@ -32,3 +32,7 @@ der Login-Button gedrückt wird
 soll die Seite den Titel '${Title}' und die URL '${url}' haben.
     Get Title    ==    ${Title}
     Get Url    $=    ${url}
+
+
+*** Variablen ***
+${HEADLESS} =    False

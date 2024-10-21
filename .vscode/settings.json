@@ -31,12 +31,12 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "files.exclude": {
-        "**/.*": true,
-        "**/.vscode": true,
-        "LICENSE": true,
-        "requirements.txt": true,
-        "README.md": true,
-        "**/crypto_keys": true
+        "**/.*": false,
+        "**/.vscode": false,
+        "LICENSE": false,
+        "requirements.txt": false,
+        "README.md": false,
+        "**/crypto_keys": false
     },
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {

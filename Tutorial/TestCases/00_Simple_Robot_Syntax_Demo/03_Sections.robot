@@ -1,9 +1,3 @@
-*** Comments ***
-Dear Participants,
-
-This is a Comment.
-
-
 *** Settings ***
 Library     String
 
@@ -13,12 +7,11 @@ ${Redner}       René Rohner
 
 
 *** Test Cases ***
-Testfall 1
+Ich bin ein Testfall
     [Tags]    marker1    marker2
-    [Timeout]    10 s
     [Setup]    Log To Console    Das ist der Anfang
-    Ich bin ein Keyword    Hallo
-    Log    Bitte das hier auch in die Console    console=Ja
+    Ich bin ein Keyword    Ich bin ein Argument: ${Redner}
+    Log    Das hier landet im Log
     Log To Console    Das ist mitten drin
     [Teardown]    Log To Console    Das ist das Ende
 

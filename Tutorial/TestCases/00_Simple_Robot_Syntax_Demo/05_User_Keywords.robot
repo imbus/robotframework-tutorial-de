@@ -5,10 +5,10 @@ This is a Test with Keywords
 
 Test Sleeping for 5 Seconds
     ${Zeit}    Get Time Of Day
-    Log To Console    ${Zeit}
+    Log To Console    \n${Zeit}
     Sleep    5 sec
     ${Zeit}    Get Time Of Day
-    Log To Console    ${Zeit}
+    Log To Console    \n${Zeit}
 
 
 *** Keywords ***

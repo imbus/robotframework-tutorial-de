@@ -11,7 +11,7 @@ Tests with Time
 Test a Text Contains
     Log To Console    one,two,three
     ${list}=    Split String    one,two,three    ,
-    Log Many    @{list}
+    Log To Console    FOR-Loop über: ${list}
     FOR    ${item}    IN    @{list}
         Log To Console    ${item}
     END

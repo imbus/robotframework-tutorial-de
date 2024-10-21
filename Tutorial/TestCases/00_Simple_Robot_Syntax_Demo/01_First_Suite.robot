@@ -5,5 +5,6 @@ My Simple Test
     Should Be Equal    Hello    Hello
 
 My failing Test
+    [Tags]    failing
     Log To Console    This test case fails
     Should Be Equal    Hello    World!

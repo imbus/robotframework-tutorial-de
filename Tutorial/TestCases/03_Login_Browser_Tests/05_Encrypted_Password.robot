@@ -1,6 +1,6 @@
 *** Settings ***
 Library     Browser
-Library     CryptoLibrary    variable_decryption=True    key_path=crypto_keys
+Library     CryptoLibrary    key_path=crypto_keys
 
 
 *** Variables ***
@@ -18,7 +18,7 @@ Login with correct data
 
 *** Keywords ***
 Open CarConfigurator
-    New Browser    headless=False
+    New Browser    headless=${HEADLESS}
     New Context
     New Page    http://car.keyword-driven.de
 
@@ -30,7 +30,7 @@ Type Username
 Type Password
     [Documentation]    Types the given \${password} into the password input element.
     [Arguments]    ${password}
-    Type Secret    id=input_password    $password
+    Type Secret    id=input_password    ${password}
 
 Click Login Button
     Click    id=button_login
@@ -39,3 +39,7 @@ Verify Page
     [Arguments]    ${Title}    ${url}
     Get Title    ==    ${Title}
     Get Url    $=    ${url}
+
+
+*** Variables ***
+${HEADLESS} =    False

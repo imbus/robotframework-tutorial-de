@@ -1,5 +1,4 @@
 robotframework-browser
-robotframework-debugger
 robotframework-robocop
 robotframework-tidy
 robotframework-faker
@@ -7,3 +6,6 @@ robotframework-debug
 robotframework-datadriver
 robotframework-stacktrace
 robotframework-crypto
+robotframework-testobject
+robotframework-requests
+robotframework-pabot

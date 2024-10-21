@@ -5,14 +5,14 @@ Library     Browser
 *** Test Cases ***
 Login with correct data
     Open CarConfigurator
-    Type Username    schulung01
-    Type Password    @RBTFRMWRK@
+    Type Username    user01
+    Type Password    password
     Click Login Button
     Verify Page    CarConfigurator    list
 
 Login user with functional keywords
     Open CarConfigurator
-    Login User    admin    @RBTFRMWRK@
+    Login User    user01    password
     Verify Page    CarConfigurator    list
 
 Login user with business keywords
@@ -24,7 +24,7 @@ Login user with business keywords
 Start CarConfig as Administrator
     [Tags]    business
     Open CarConfigurator
-    Login User    admin    @RBTFRMWRK@
+    Login User    user01    password
 
 Login User
     [Tags]    functional
@@ -53,6 +53,10 @@ Verify Page
     Get Url    $=    ${url}
 
 Open CarConfigurator
-    New Browser    headless=False
+    New Browser    headless=${HEADLESS}
     New Context
     New Page    http://car.keyword-driven.de
+
+
+*** Variables ***
+${HEADLESS} =    False

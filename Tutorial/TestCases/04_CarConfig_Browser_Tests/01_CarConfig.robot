@@ -11,7 +11,7 @@ ${TEST_URL}     http://car.keyword-driven.de
 *** Test Cases ***
 Configure Car with Pass
     [Setup]    Open Web Page    ${TEST_URL}
-    Login User    admin    @RBTFRMWRK@
+    Login User    user01    password
     Click New_Car
     Select Base Model    Minigolf
     Select Special Model    Jazz

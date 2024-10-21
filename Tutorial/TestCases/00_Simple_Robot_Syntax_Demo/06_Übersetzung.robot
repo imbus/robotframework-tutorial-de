@@ -1,10 +1,4 @@
 language: de
-*** Kommentare ***
-Hallo liebe Teilnehmenden,
-
-Das ist eine Deutsche Suite.
-
-
 *** Einstellungen ***
 Bibliothek      String
 
