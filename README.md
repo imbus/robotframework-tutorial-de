@@ -71,6 +71,6 @@ Falls dies nicht funktioniert, die Taste `F1` drücken und den Befehl `>Python: 
 ## Testen der Einrichtung
 
 Zum Testen der Installation den 'Testing'-Explorer (Ansicht > Testing) öffnen und die `Tutorial`-Suite ausführen.
-Das Ergebnis sollte wie folgt aussehen: 16 Tests, 12 bestanden, 4 fehlgeschlagen.
+Das Ergebnis sollte wie folgt aussehen: `32 tests, 29 passed, 3 failed`.
 
 Nun ist alles bereit für die Teilnahme am Workshop.
