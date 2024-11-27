@@ -78,7 +78,7 @@ Open Web Page
     New Context
     ...    colorScheme=dark
     ...    viewport=${None}
-    ...    tracing=${OUTPUTDIR}/trace.zip
+    ...    tracing=True
     New Page    ${url}
 
 Go To Next Page
