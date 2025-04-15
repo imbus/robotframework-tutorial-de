@@ -17,5 +17,5 @@
     "mechatroner.rainbow-csv"
   ],
   "forwardPorts": [6080],
-  "postCreateCommand": "robot --version && python --version && node --version"
+  "postCreateCommand": "python -m pip install -r requirements.txt"
 }
