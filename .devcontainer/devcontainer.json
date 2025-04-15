@@ -16,5 +16,5 @@
     "mechatroner.rainbow-csv"
   ],
   "forwardPorts": [6080],
-  "postCreateCommand": "python -m pip install -r requirements.txt"
+  "postCreateCommand": "python -m pip install -r requirements.txt && ./start_vnc.sh"
 }
