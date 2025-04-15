@@ -30,12 +30,13 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     "files.exclude": {
-        "**/.*": false,
-        "**/.vscode": false,
-        "LICENSE": false,
-        "requirements.txt": false,
-        "README.md": false,
-        "**/crypto_keys": false
+        "**/.*": true,
+        "**/.vscode": true,
+        "LICENSE": true,
+        "requirements.txt": true,
+        "README.md": true,
+        "**/crypto_keys": true,
+        "start_vnc.sh": true
     },
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorCustomizations": {
