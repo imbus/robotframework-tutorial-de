@@ -31,6 +31,8 @@ Gitpod.io kann aktiv für 50 Stunden pro Monat kostenlos genutzt werden, und die
 
 ### Einrichtung:
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/imbus/robocon-de-tutorial)
+
 [![In Gitpod öffnen](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/imbus/robotframework-tutorial-de)
 
 1. Dieses Repository in GitPod öffnen, indem der obige Button geklickt wird.
