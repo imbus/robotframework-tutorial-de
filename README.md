@@ -8,7 +8,7 @@ Repository für das Robot Framework Webinar auf Deutsch
 Dieses Tutorial enthält mehrere kleine Beispiele, wie Robot Framework verwendet wird. Es kann entweder lokal auf dem eigenen Rechner oder in einer Cloud-Entwicklungsumgebung genutzt werden.
 
 Falls Fragen zu Robot Framework bestehen oder die Installation nicht funktioniert, kann dem Robot Framework Slack-Channel **#newbies** beigetreten werden oder eine Schulung bei imbus gebucht werden.
-[Hier klicken für Slack-Einladung](https://join.slack.com/t/robotframework/shared_invite/zt-2ruah2fhe-fR4DFkfLKy6mjpW2mBxGUQ)
+[Hier klicken für Slack-Einladung](https://slack.robotframework.org)
 
 ## Vorbereitung
 
