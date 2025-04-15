@@ -4,7 +4,7 @@
   "features": {
     "ghcr.io/devcontainers/features/desktop-lite:1.2.6": {
       "version": "latest",
-      "password": "vscode",
+      "password": "robot",
       "webPort": "6080",
       "vncPort": "5901"
     }
