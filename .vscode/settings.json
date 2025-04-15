@@ -34,7 +34,7 @@
         "**/.vscode": true,
         "LICENSE": true,
         "requirements.txt": true,
-        "README.md": true,
+        "README.md": false,
         "**/crypto_keys": true,
         "start_vnc.sh": true
     },

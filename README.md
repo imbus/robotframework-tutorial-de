@@ -14,33 +14,30 @@ Falls Fragen zu Robot Framework bestehen oder die Installation nicht funktionier
 
 Zur Entscheidung, welche Art der Nutzung gewählt werden sollte, hier ein paar Hinweise:
 
-- Cloud-Umgebung (Gitpod.io): Diese Option ist geeignet, wenn lediglich ein Einblick in Robot Framework gewonnen werden soll und eine weitere Nutzung nach dem Workshop eher unwahrscheinlich ist. Auch wenn lokale Installationen nicht möglich sind oder fehlgeschlagen sind, ist diese Option empfehlenswert.
+- Cloud-Umgebung (Github Codespaces): Diese Option ist geeignet, wenn lediglich ein Einblick in Robot Framework gewonnen werden soll und eine weitere Nutzung nach dem Workshop eher unwahrscheinlich ist. Auch wenn lokale Installationen nicht möglich sind oder fehlgeschlagen sind, ist diese Option empfehlenswert.
 - Lokale Installation: Diese Option ist geeignet, wenn die Absicht besteht, sich intensiver mit Robot Framework zu befassen und nach dem Workshop tiefer einzutauchen.
 
-## Gitpod.io Cloud-Umgebung
+## Github Codespaces Cloud-Umgebung
 
-Gitpod.io bietet schnell einsatzbereite, dockerbasierte, cloudgehostete Entwicklungsumgebungen.
+Github Codespaces bietet schnell einsatzbereite, dockerbasierte, cloudgehostete Entwicklungsumgebungen.
 Alles läuft im Browser, sodass keine lokale Installation notwendig ist.
 
-Gitpod.io kann aktiv für 50 Stunden pro Monat kostenlos genutzt werden, und die Arbeitsumgebung kann jederzeit gestoppt werden, ähnlich einem Ruhezustand.
+Github Codespaces kann aktiv für ~60 Stunden pro Monat kostenlos genutzt werden, und die Arbeitsumgebung kann jederzeit gestoppt werden, ähnlich einem Ruhezustand.
 
 ### Anforderungen
 
 - Ein Github.com-Konto
-- Telefonnummer zur Registrierungsverifizierung (Zur Aktivierung des Kontos muss eine Telefonnummer angegeben werden, um Missbrauch zu vermeiden)
 
 ### Einrichtung:
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/imbus/robotframework-tutorial-de)
 
-[![In Gitpod öffnen](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/imbus/robotframework-tutorial-de)
-
-1. Dieses Repository in GitPod öffnen, indem der obige Button geklickt wird.
-2. Die Standardeinstellungen beibehalten (Standard class) und auf **Continue** klicken.
-3. Nach der **Vorbereitung** erscheint VSCode im Browser.
-4. VSCode wird neu geladen, und die Installation aller Abhängigkeiten ist im Terminal zu sehen.
-5. Nachdem die Installation abgeschlossen ist, wird VSCode ein zweites und letztes Mal neu geladen.
-6. Nun sollten alle Dateien des Repositorys im Explorer sichtbar sein, und alles ist bereit für den Workshop.
+1. Dieses Repository in GitHub Codespaces öffnen, indem der obige Button geklickt wird.
+2. Die Standardeinstellungen beibehalten (Standard class) und auf **Create Codespace** klicken.
+3. Unten rechts wird "Setting up remote connection: Building codespace..." angezeigt.
+4. Über einen klick auf "Building codespace..." kann der Vortschritt beobachtet werden.
+5. Nachdem die Installation abgeschlossen ist, wird in VSCode die README.md angezeigt und die Farben ändern sich.
+6. Im Terminal sollte nun "Running postCreateCommand..." zu lesen sein. Du bist startklar.
 
 ## Lokale Installation
 
