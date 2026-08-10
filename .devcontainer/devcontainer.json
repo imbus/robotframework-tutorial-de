@@ -2,7 +2,7 @@
   "name": "Robot Framework Dev",
   "image": "marketsquare/robotframework-browser:latest",
   "features": {
-    "ghcr.io/devcontainers/features/desktop-lite:1.2.6": {
+    "ghcr.io/devcontainers/features/desktop-lite:1.2.10": {
       "version": "latest",
       "password": "robot",
       "webPort": "6080",
